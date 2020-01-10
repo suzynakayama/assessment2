@@ -21,10 +21,7 @@ const deleteOne = (req, res) => {
 
     deleteTodo(todosArr, req.params.id);
 
-    res.render("index", {
-        title: "Unit 2 Assessment",
-        todos: todosArr
-    });
+    res.redirect("/");
 };
 
 module.exports = {
