@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 50px auto;
+    width: 70vw;
+    height: 90vh;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.align {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 50px;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+li {
+    list-style: none;
+}
+
+.inline {
+    display: inline;
+}
+
+.btn {
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+    <body>
+        <h1 class="align">To Do List</h1>
+        <br />
+        <div class="center">
+            <ul>
+                <% if (todos[0] === undefined ) { %>
+                <h3 class="align">There are no To Dos yet!</h3>
+                <br />
+                <% } else { todos.forEach ((todo, idx) => { %>
+
+                <li class="align">
+                    <%= todo.todo %> - <%= todo.done ? "Done" : "Not Done" %>
+                    <form
+                        class="inline"
+                        action="/<%= idx %>?_method=DELETE"
+                        method="POST"
+                    >
+                        <button class="btn" type="submit">DELETE</button>
+                    </form>
+                </li>
+                <br />
+                <% }) } %>
+            </ul>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <form class="align" action="/" method="POST" autocomplete="off">
+            <input type="text" name="todo" />
+            <input type="submit" value="ADD TO DO" />
+        </form>
+    </body>
+</html>
