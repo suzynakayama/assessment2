@@ -1,6 +1,3 @@
-const todos = [
-    // { todo: "Cook", done: true },
-    // { todo: "Groceries Shopping", done: false }
-];
+const todos = [];
 
 module.exports = { todos };
